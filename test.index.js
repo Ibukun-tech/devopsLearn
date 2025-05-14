@@ -1,5 +1,4 @@
-import add from ".";
-
+const add =require("./index.js")
 
 // --- Simple Test Runner ---
 
