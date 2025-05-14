@@ -21,7 +21,7 @@ console.log("Running tests for the add function:");
 console.log("-----------------------------------");
 
 // Test Case 1: Positive numbers
-runTest("Test 1: Positive numbers", add(2, 3), 5);
+runTest("Test 1: Positive numbers", add(1, 3), 5);
 
 // Test Case 2: Negative numbers
 runTest("Test 2: Negative numbers", add(-1, -5), -6);
