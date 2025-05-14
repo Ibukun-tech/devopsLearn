@@ -13,8 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: testing my code
-        run: |
-          echo "hello world"
+        run:  echo "hello world"
       - name: Set up nodejs
         uses: actions/setup-node@v2
         with:
