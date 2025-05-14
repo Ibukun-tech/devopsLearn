@@ -1,0 +1,27 @@
+name: my pipeline
+
+on:
+  push:
+    branches: ["master","dev"]
+  pull_request:
+    branches: ["master","dev"]
+  
+jobs:
+  test:
+    name: testing my code
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: testing my code
+        run: |
+          echo "hello world"
+      - name: Set up nodejs
+        uses: actions/setup-node@v2
+        with:
+          node-version: "18"
+          cache: "npm"
+        name: install dependencies
+        run: npm install
+
+        name: run tests
+        run: node test.index.js
